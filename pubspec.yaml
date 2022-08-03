@@ -1,29 +1,31 @@
 name: wordsus_app
 description: Website builder
-version: 1.0.0+1
+version: 0.0.1+1
 publish_to: none
 
 environment:
   sdk: ">=2.16.0 <3.0.0"
 
 dependencies:
-  beamer: ^1.4.0+1
-  bloc: ^8.0.3
+  beamer: ^1.5.0
   equatable: ^2.0.3
   flutter:
     sdk: flutter
-  flutter_bloc: ^8.0.1
   flutter_localizations:
     sdk: flutter
+  flutter_native_splash: ^2.2.7
+  flutterfire_ui: ^0.4.3+3
+  hive: ^2.2.3
   http: ^0.13.4
   intl: ^0.17.0
+  responsive_framework: ^0.2.0
 
 dev_dependencies:
   bloc_test: ^9.0.3
   flutter_test:
     sdk: flutter
   mocktail: ^0.3.0
-  very_good_analysis: ^2.4.0
+  very_good_analysis: ^3.0.1
 
 flutter:
   uses-material-design: true
@@ -31,3 +33,9 @@ flutter:
   assets:
     - assets/images/
   
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/images/splash/logo_lockup_flutter_vertical.png
+  color_dark: "#042a49"
+  image_dark: assets/images/splash/logo_lockup_flutter_vertical_wht.png
+  fullscreen: true
